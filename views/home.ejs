@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <a href="http://localhost:3000/post">Add a new post</a>
+    <% for(data of datas){ %>
+        <div class="post">
+            <h2>Name:<%= data.name %></h2>
+            <h5>email: <%= data.email %></h5>
+            <a href="http://localhost:3000/post/show/<%=data.id%>">show Post</a>
+            <a href="http://localhost:3000/post/edit/<%=data.id%>">Edit</a>
+        </div>
+    <% } %>
+</body>
+</html>

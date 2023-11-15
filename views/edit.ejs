@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form method="post" action="/post/<%=dataContent.id%>?_method=PATCH">
+        <div class="post">
+            <p>You are changing <%=dataContent.name %> email</p>
+            <br>
+            <input type="text" name="email" placeholder="change email">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
